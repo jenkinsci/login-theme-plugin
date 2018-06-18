@@ -1,0 +1,6 @@
+target/
+work/
+
+# IntelliJ
+.idea/
+*.iml

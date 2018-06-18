@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    This plugin allows extending and overriding the default theme used on the login, signup, and (re)starting pages.
+</div>
