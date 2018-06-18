@@ -52,7 +52,7 @@ public class LoginTheme extends SimplePageDecorator {
     @Nonnull
     @Override
     public String getDisplayName() {
-        return "Login Theme";
+        return Messages.DisplayName();
     }
 
     public String getHead() {

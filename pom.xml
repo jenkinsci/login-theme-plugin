@@ -16,7 +16,7 @@
         <java.level>8</java.level>
     </properties>
     <name>Login Theme Plugin</name>
-    <description>TODO</description>
+    <description>This plugin allows extending and overriding the default theme used on the login and signup pages.</description>
     <licenses>
         <license>
             <name>MIT License</name>
