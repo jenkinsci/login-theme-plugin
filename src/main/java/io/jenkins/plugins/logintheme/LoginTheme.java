@@ -94,12 +94,6 @@ public class LoginTheme extends SimplePageDecorator {
 
     @Override
     public boolean configure(StaplerRequest req, JSONObject json) throws FormException {
-        // reset values to default before data-binding
-        this.head = null;
-        this.header = null;
-        this.footer = null;
-        this.useDefaultTheme = true;
-
         req.bindJSON(this, json);
         this.save();
         return true;
