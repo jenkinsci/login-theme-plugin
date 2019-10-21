@@ -22,7 +22,7 @@ See the related [announcement blog post for the new 2.128 login theme](https://j
 
 In *very rare* configurations, this functionality could amount to a potential security issue.
 
-* Dangerous permissions are enabled for the instace 
+* Dangerous permissions are enabled for the instance 
  (not recommended, see the [security advisory](https://jenkins.io/security/advisory/2017-04-10/#matrix-authorization-strategy-plugin-allowed-configuring-dangerous-permissions)).
 * Configuration sets `Overall/Administer` and `Overall/RunScripts` differently, and not allowing administrators to configure the Markup Formatter 
 
