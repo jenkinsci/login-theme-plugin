@@ -1,7 +1,7 @@
 # Login Theme Plugin for Jenkins
 
 [![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/role-strategy.svg)](https://plugins.jenkins.io/login-theme)
-[![GitHub release](https://img.shields.io/github/release/jenkinsci/login-theme-plugin-plugin.svg?label=changelog)](https://github.com/jenkinsci/login-theme-plugin/releases/latest)
+[![GitHub release](https://img.shields.io/github/release/jenkinsci/login-theme-plugin.svg?label=changelog)](https://github.com/jenkinsci/login-theme-plugin/releases/latest)
 [![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/login-theme.svg?color=blue)](https://plugins.jenkins.io/login-theme)
 
 This plugin allows extending and overriding the default theme used on the login and signup pages since Jenkins 2.128.
