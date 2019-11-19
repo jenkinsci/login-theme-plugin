@@ -25,12 +25,16 @@ package io.jenkins.plugins.logintheme;
 
 import hudson.Extension;
 import jenkins.model.SimplePageDecorator;
+import hudson.model.Descriptor;
 import net.sf.json.JSONObject;
+import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.DataBoundSetter;
 
 import javax.annotation.Nonnull;
 
 @Extension
+@Symbol("login-theme-plugin")
 public class LoginTheme extends SimplePageDecorator {
 
     private String head;
@@ -45,6 +49,7 @@ public class LoginTheme extends SimplePageDecorator {
         return useDefaultTheme;
     }
 
+    @DataBoundSetter
     public void setUseDefaultTheme(boolean useDefaultTheme) {
         this.useDefaultTheme = useDefaultTheme;
     }
@@ -68,17 +73,21 @@ public class LoginTheme extends SimplePageDecorator {
     }
 
     public LoginTheme() {
+        super();
         load();
     }
 
+    @DataBoundSetter
     public void setHead(String head) {
         this.head = head;
     }
 
+    @DataBoundSetter
     public void setHeader(String header) {
         this.header = header;
     }
 
+    @DataBoundSetter
     public void setFooter(String footer) {
         this.footer = footer;
     }
