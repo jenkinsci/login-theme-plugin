@@ -1,5 +1,6 @@
 # Login Theme Plugin for Jenkins
 
+[![Build Status](https://ci.jenkins.io/job/Plugins/job/login-theme-plugin/job/main/badge/icon)](https://ci.jenkins.io/job/Plugins/job/login-theme-plugin/job/main/)
 [![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/login-theme.svg)](https://plugins.jenkins.io/login-theme)
 [![GitHub release](https://img.shields.io/github/release/jenkinsci/login-theme-plugin.svg?label=changelog)](https://github.com/jenkinsci/login-theme-plugin/releases/latest)
 [![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/login-theme.svg?color=blue)](https://plugins.jenkins.io/login-theme)
