@@ -14,7 +14,7 @@
     <properties>
         <changelist>999999-SNAPSHOT</changelist>
         <gitHubRepo>jenkinsci/login-theme-plugin</gitHubRepo>
-        <jenkins.version>2.361.4</jenkins.version>
+        <jenkins.version>2.387.3</jenkins.version>
     </properties>
     <name>Login Theme Plugin</name>
     <description>This plugin allows extending and overriding the default theme used on the login and signup pages since Jenkins 2.128.</description>
@@ -35,8 +35,8 @@
         <dependencies>
             <dependency>
                 <groupId>io.jenkins.tools.bom</groupId>
-                <artifactId>bom-2.361.x</artifactId>
-                <version>2102.v854b_fec19c92</version>
+                <artifactId>bom-2.387.x</artifactId>
+                <version>2163.v2d916d90c305</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
