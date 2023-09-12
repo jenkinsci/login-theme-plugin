@@ -15,7 +15,7 @@
         <changelist>999999-SNAPSHOT</changelist>
         <gitHubRepo>jenkinsci/login-theme-plugin</gitHubRepo>
         <jenkins.version>2.421</jenkins.version>
-        <hpi.compatibleSinceVersion>46</hpi.compatibleSinceVersion>
+        <hpi.compatibleSinceVersion>78</hpi.compatibleSinceVersion>
         <configuration-as-code.version>1670.v564dc8b_982d0</configuration-as-code.version>
     </properties>
     <name>Login Theme Plugin</name>
