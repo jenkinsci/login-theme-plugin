@@ -25,16 +25,20 @@ package io.jenkins.plugins.logintheme;
 
 import hudson.Extension;
 import jenkins.model.SimplePageDecorator;
-import hudson.model.Descriptor;
+import jenkins.appearance.AppearanceCategory;
+import jenkins.model.GlobalConfigurationCategory;
 import net.sf.json.JSONObject;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.StaplerRequest;
+
+import edu.umd.cs.findbugs.annotations.NonNull;
+
 import org.kohsuke.stapler.DataBoundSetter;
 
 import javax.annotation.Nonnull;
 
 @Extension
-@Symbol("login-theme-plugin")
+@Symbol("loginTheme")
 public class LoginTheme extends SimplePageDecorator {
 
     private String head;
@@ -44,6 +48,12 @@ public class LoginTheme extends SimplePageDecorator {
     private String footer;
 
     private boolean useDefaultTheme = true;
+
+    @NonNull
+    @Override
+    public GlobalConfigurationCategory getCategory() {
+        return GlobalConfigurationCategory.get(AppearanceCategory.class);
+    }
 
     public boolean isUseDefaultTheme() {
         return useDefaultTheme;
