@@ -14,7 +14,9 @@
     <properties>
         <changelist>999999-SNAPSHOT</changelist>
         <gitHubRepo>jenkinsci/login-theme-plugin</gitHubRepo>
-        <jenkins.version>2.414.1</jenkins.version>
+        <jenkins.version>2.421</jenkins.version>
+        <hpi.compatibleSinceVersion>78</hpi.compatibleSinceVersion>
+        <configuration-as-code.version>1670.v564dc8b_982d0</configuration-as-code.version>
     </properties>
     <name>Login Theme Plugin</name>
     <description>This plugin allows extending and overriding the default theme used on the login and signup pages since Jenkins 2.128.</description>
@@ -35,13 +37,27 @@
         <dependencies>
             <dependency>
                 <groupId>io.jenkins.tools.bom</groupId>
-                <artifactId>bom-2.414.x</artifactId>
+                <artifactId>bom-weekly</artifactId>
                 <version>2423.vce598171d115</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>io.jenkins</groupId>
+            <artifactId>configuration-as-code</artifactId>
+            <version>${configuration-as-code.version}</version>
+            <scope>test</scope>
+          </dependency>
+          <dependency>
+            <groupId>io.jenkins.configuration-as-code</groupId>
+            <artifactId>test-harness</artifactId>
+            <version>${configuration-as-code.version}</version>
+            <scope>test</scope>
+          </dependency>
+    </dependencies>
     <repositories>
         <repository>
             <id>repo.jenkins-ci.org</id>

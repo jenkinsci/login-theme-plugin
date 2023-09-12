@@ -21,6 +21,17 @@ For example
 
 ![System config](docs/system_config.png)
 
+## Configuration as code
+
+```
+appearance:
+  loginTheme:
+    footer: 'The footer'
+    head: ''
+    header: '<h3>Welcome to login theme Jenkins</h3>'
+    useDefaultTheme: true
+```
+
 ## Result
 
 Previous config will render login page customization

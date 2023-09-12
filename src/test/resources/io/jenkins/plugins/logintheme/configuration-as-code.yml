@@ -1,0 +1,6 @@
+appearance:
+  loginTheme:
+    footer: 'The footer'
+    head: 'The head'
+    header: 'The header'
+    useDefaultTheme: true
