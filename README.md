@@ -25,7 +25,7 @@ For example
 
 ```
 appearance:
-  simpleTheme:
+  loginTheme:
     footer: 'The footer'
     head: ''
     header: '<h3>Welcome to login theme Jenkins</h3>'
