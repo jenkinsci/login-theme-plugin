@@ -38,7 +38,7 @@
             <dependency>
                 <groupId>io.jenkins.tools.bom</groupId>
                 <artifactId>bom-weekly</artifactId>
-                <version>2423.vce598171d115</version>
+                <version>2465.va_e76ed7b_3061</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
