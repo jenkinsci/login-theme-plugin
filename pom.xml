@@ -16,7 +16,7 @@
         <gitHubRepo>jenkinsci/login-theme-plugin</gitHubRepo>
         <jenkins.version>2.421</jenkins.version>
         <hpi.compatibleSinceVersion>78</hpi.compatibleSinceVersion>
-        <configuration-as-code.version>1670.v564dc8b_982d0</configuration-as-code.version>
+        <configuration-as-code.version>1700.v6f448841296e</configuration-as-code.version>
     </properties>
     <name>Login Theme Plugin</name>
     <description>This plugin allows extending and overriding the default theme used on the login and signup pages since Jenkins 2.128.</description>
