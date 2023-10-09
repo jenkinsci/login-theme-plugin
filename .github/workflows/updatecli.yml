@@ -1,4 +1,4 @@
-name: Update CLI
+name: updatecli
 
 on:
   workflow_dispatch:
