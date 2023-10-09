@@ -22,6 +22,7 @@ targets:
   jenkins:
     name: Update Jenkins Version
     sourceid: jenkins
+    scmid: github
     kind: file
     spec:
       file: pom.xml
@@ -29,7 +30,7 @@ targets:
       replacepattern: '<jenkins.version>{{ source `jenkins` }}</jenkins.version>'
 actions:
   jenkins:
-    title: Test latest Jenkins version {{ source "jenkins" }}
+    title: Bump Jenkins version {{ source "jenkins" }}
     kind: github/pullrequest
     scmid: github
     targets:
