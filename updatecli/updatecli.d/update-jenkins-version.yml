@@ -14,7 +14,7 @@ sources:
     name: Get Jenkins LTS Version
     kind: jenkins
     spec:
-      release: weekly
+      release: stable
     github:
       token: '{{ requiredEnv .github.token }}'
       username: '{{ .github.username }}'
@@ -22,7 +22,7 @@ sources:
     name: Get latest BOM line
     kind: jenkins
     spec:
-      release: weekly
+      release: stable
     transformers:
       - trimsuffix: ".1"
       - trimsuffix: ".2"
@@ -50,8 +50,8 @@ targets:
     kind: file
     spec:
       file: pom.xml
-      matchpattern: '<artifactId>bom-(.*)</artifactId>'
-      replacepattern: '<artifactId>bom-weekly</artifactId>'
+      matchpattern: '<artifactId>bom-(.*).x</artifactId>'
+      replacepattern: '<artifactId>{{ source `bom` }}</artifactId>'
 actions:
   jenkins:
     title: Bump Jenkins version {{ source "jenkins" }}
