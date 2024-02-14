@@ -24,7 +24,9 @@ THE SOFTWARE.
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core">
   <section class="app-sign-in-register__branding">
+    <div class="app-sign-in-register__branding__starburst"></div>
+    <j:set var="imagesrc" defaultValue="${imagesURL}/svgs/logo.svg" value="${it.branding}"/>
+    <img src="${imagesrc}" alt="${%logo}"/>
     <div style="${it.customCSS}"></div>
-    <img src="${it.branding}"/>
   </section>
 </j:jelly>
