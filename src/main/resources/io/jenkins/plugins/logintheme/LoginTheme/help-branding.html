@@ -1,7 +1,7 @@
 <!--
 The MIT License
 
-Copyright (c) 2018, CloudBees, Inc.
+Copyright (c) 2024, CloudBees, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,26 +21,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -->
-<?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
-    <f:section title="${descriptor.displayName}">
-        <f:entry field="head" title="${%Head}">
-            <f:textarea class="fixed-width"/>
-        </f:entry>
-        <f:entry field="header" title="${%Header}">
-            <f:textarea class="fixed-width"/>
-        </f:entry>
-        <f:entry field="footer" title="${%Footer}">
-            <f:textarea class="fixed-width"/>
-        </f:entry>
-        <f:entry field="branding" title="${%Branding}">
-            <f:textbox class="fixed-width"/>
-        </f:entry>
-        <f:entry field="customCSS" title="${%Custom CSS}">
-            <f:textarea class="fixed-width"/>
-        </f:entry>
-        <f:entry field="useDefaultTheme" title="${%Use default theme}">
-            <f:checkbox/>
-        </f:entry>
-    </f:section>
-</j:jelly>
+<p>This URL will be set as the branding logo on the default login page.</p>
