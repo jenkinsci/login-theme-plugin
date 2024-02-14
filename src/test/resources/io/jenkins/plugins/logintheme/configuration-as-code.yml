@@ -3,4 +3,6 @@ appearance:
     footer: 'The footer'
     head: 'The head'
     header: 'The header'
+    branding: 'The branding'
+    customCSS: 'The custom css'
     useDefaultTheme: true

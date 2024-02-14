@@ -47,6 +47,10 @@ public class LoginTheme extends SimplePageDecorator {
 
     private String footer;
 
+    private String branding;
+
+    private String customCSS;
+
     private boolean useDefaultTheme = true;
 
     @NonNull
@@ -82,6 +86,14 @@ public class LoginTheme extends SimplePageDecorator {
         return footer;
     }
 
+    public String getBranding() {
+        return branding;
+    }
+
+    public String getCustomCSS() {
+        return customCSS;
+    }
+
     public LoginTheme() {
         super();
         load();
@@ -100,6 +112,16 @@ public class LoginTheme extends SimplePageDecorator {
     @DataBoundSetter
     public void setFooter(String footer) {
         this.footer = footer;
+    }
+
+    @DataBoundSetter
+    public void setBranding(String branding) {
+        this.branding = branding;
+    }
+
+    @DataBoundSetter
+    public void setCustomCSS(String customCSS) {
+        this.customCSS = customCSS;
     }
 
     @Override
