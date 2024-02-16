@@ -16,7 +16,7 @@ public class ConfigurationAsCodeTest {
     @Test
     @ConfiguredWithCode("configuration-as-code.yml")
     public void should_support_configuration_as_code() throws Exception {
-        LoginTheme plugin =Jenkins.get().getExtensionList(LoginTheme.class).get(0);
+        LoginTheme plugin = Jenkins.get().getExtensionList(LoginTheme.class).get(0);
         assertEquals(true, plugin.isUseDefaultTheme());
         assertEquals("The footer", plugin.getFooter());
         assertEquals("The head", plugin.getHead());
