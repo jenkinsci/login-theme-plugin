@@ -1,16 +1,13 @@
 package io.jenkins.plugins.logintheme;
 
-import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.*;
 
-import java.io.IOException;
+import net.sf.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.jvnet.hudson.test.JenkinsRule;
 import org.jvnet.hudson.test.junit.jupiter.WithJenkins;
-
-import net.sf.json.JSONObject;
 import org.kohsuke.stapler.StaplerRequest;
-
 
 @WithJenkins
 public class LoginThemeTest {

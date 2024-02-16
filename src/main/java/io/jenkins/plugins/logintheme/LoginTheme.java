@@ -23,19 +23,16 @@
  */
 package io.jenkins.plugins.logintheme;
 
+import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
-import jenkins.model.SimplePageDecorator;
+import javax.annotation.Nonnull;
 import jenkins.appearance.AppearanceCategory;
 import jenkins.model.GlobalConfigurationCategory;
+import jenkins.model.SimplePageDecorator;
 import net.sf.json.JSONObject;
 import org.jenkinsci.Symbol;
-import org.kohsuke.stapler.StaplerRequest;
-
-import edu.umd.cs.findbugs.annotations.NonNull;
-
 import org.kohsuke.stapler.DataBoundSetter;
-
-import javax.annotation.Nonnull;
+import org.kohsuke.stapler.StaplerRequest;
 
 @Extension
 @Symbol("loginTheme")
