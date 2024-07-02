@@ -29,7 +29,7 @@
   <properties>
     <changelist>999999-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/login-theme-plugin</gitHubRepo>
-    <jenkins.version>2.440.3</jenkins.version>
+    <jenkins.version>2.452.2</jenkins.version>
     <hpi.compatibleSinceVersion>78</hpi.compatibleSinceVersion>
     <configuration-as-code.version>1810.v9b_c30a_249a_4c</configuration-as-code.version>
     <spotless.check.skip>false</spotless.check.skip>
@@ -38,7 +38,7 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.440.x</artifactId>
+        <artifactId>bom-2.452.x</artifactId>
         <version>3157.vb_3e8b_8a_d185d</version>
         <type>pom</type>
         <scope>import</scope>
