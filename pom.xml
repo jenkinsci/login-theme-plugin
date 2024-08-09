@@ -29,7 +29,7 @@
   <properties>
     <changelist>999999-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/login-theme-plugin</gitHubRepo>
-    <jenkins.version>2.440.3</jenkins.version>
+    <jenkins.version>2.462.1</jenkins.version>
     <hpi.compatibleSinceVersion>78</hpi.compatibleSinceVersion>
     <configuration-as-code.version>1836.vccda_4a_122a_a_e</configuration-as-code.version>
     <spotless.check.skip>false</spotless.check.skip>
