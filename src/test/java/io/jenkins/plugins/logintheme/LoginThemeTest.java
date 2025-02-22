@@ -7,7 +7,7 @@ import net.sf.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.jvnet.hudson.test.JenkinsRule;
 import org.jvnet.hudson.test.junit.jupiter.WithJenkins;
-import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.StaplerRequest2;
 
 @WithJenkins
 public class LoginThemeTest {
@@ -51,7 +51,7 @@ public class LoginThemeTest {
     public void testConfigure(JenkinsRule jenkinsRule) throws Exception {
         LoginTheme plugin = new LoginTheme();
 
-        StaplerRequest staplerRequest = mock(StaplerRequest.class);
+        StaplerRequest2 staplerRequest = mock(StaplerRequest2.class);
 
         JSONObject jsonObject = new JSONObject();
 

@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>5.6</version>
+    <version>5.7</version>
     <relativePath />
   </parent>
   <groupId>io.jenkins.plugins</groupId>
@@ -29,8 +29,9 @@
   <properties>
     <changelist>999999-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/login-theme-plugin</gitHubRepo>
+    <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
     <jenkins.baseline>2.479</jenkins.baseline>
-    <jenkins.version>${jenkins.baseline}.1</jenkins.version>
+    <jenkins.version>${jenkins.baseline}.3</jenkins.version>
     <hpi.compatibleSinceVersion>78</hpi.compatibleSinceVersion>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
@@ -39,7 +40,7 @@
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
         <artifactId>bom-${jenkins.baseline}.x</artifactId>
-        <version>4051.v78dce3ce8b_d6</version>
+        <version>4228.v0a_71308d905b_</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
