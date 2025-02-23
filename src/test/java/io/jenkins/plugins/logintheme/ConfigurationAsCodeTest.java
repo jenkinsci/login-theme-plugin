@@ -22,6 +22,6 @@ public class ConfigurationAsCodeTest {
         assertEquals("The head", plugin.getHead());
         assertEquals("The header", plugin.getHeader());
         assertEquals("The branding", plugin.getBranding());
-        assertEquals("The custom css", plugin.getCustomCSS());
+        assertEquals("The custom css", plugin.());
     }
 }
