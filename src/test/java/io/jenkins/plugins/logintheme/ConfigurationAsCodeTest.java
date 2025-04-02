@@ -1,23 +1,22 @@
 package io.jenkins.plugins.logintheme;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import io.jenkins.plugins.casc.misc.ConfiguredWithCode;
 import io.jenkins.plugins.casc.misc.JenkinsConfiguredWithCodeRule;
+import io.jenkins.plugins.casc.misc.junit.jupiter.WithJenkinsConfiguredWithCode;
 import jenkins.model.Jenkins;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class ConfigurationAsCodeTest {
-
-    @Rule
-    public JenkinsConfiguredWithCodeRule r = new JenkinsConfiguredWithCodeRule();
+@WithJenkinsConfiguredWithCode
+class ConfigurationAsCodeTest {
 
     @Test
     @ConfiguredWithCode("configuration-as-code.yml")
-    public void should_support_configuration_as_code() throws Exception {
+    void should_support_configuration_as_code(JenkinsConfiguredWithCodeRule r) {
         LoginTheme plugin = Jenkins.get().getExtensionList(LoginTheme.class).get(0);
-        assertEquals(true, plugin.isUseDefaultTheme());
+        assertTrue(plugin.isUseDefaultTheme());
         assertEquals("The footer", plugin.getFooter());
         assertEquals("The head", plugin.getHead());
         assertEquals("The header", plugin.getHeader());
