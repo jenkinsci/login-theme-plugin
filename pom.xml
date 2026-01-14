@@ -35,6 +35,7 @@
     <hpi.compatibleSinceVersion>78</hpi.compatibleSinceVersion>
     <spotless.check.skip>false</spotless.check.skip>
     <ban-junit4-imports.skip>false</ban-junit4-imports.skip>
+    <ban-commons-lang-2.skip>false</ban-commons-lang-2.skip>
   </properties>
   <dependencyManagement>
     <dependencies>
