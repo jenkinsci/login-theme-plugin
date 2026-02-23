@@ -88,7 +88,10 @@ public class LoginTheme extends SimplePageDecorator {
     }
 
     public String getCustomCSS() {
-        return customCSS;
+        if (customCss != null && !customCss.isEmpty()) {
+        return "<style>" + customCss + "</style>"; // Wrap CSS in a <style> tag
+    }
+    return ""; 
     }
 
     public LoginTheme() {
