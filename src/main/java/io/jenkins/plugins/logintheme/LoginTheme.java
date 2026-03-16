@@ -25,7 +25,6 @@ package io.jenkins.plugins.logintheme;
 
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
-import javax.annotation.Nonnull;
 import jenkins.appearance.AppearanceCategory;
 import jenkins.model.GlobalConfigurationCategory;
 import jenkins.model.SimplePageDecorator;
@@ -65,7 +64,7 @@ public class LoginTheme extends SimplePageDecorator {
         this.useDefaultTheme = useDefaultTheme;
     }
 
-    @Nonnull
+    @NonNull
     @Override
     public String getDisplayName() {
         return Messages.displayName();
